@@ -1,5 +1,18 @@
 [tool.isort]
 profile = "black"
+# Add additional isort configurations if necessary
+# known_third_party = "your_third_party_lib"
+# known_first_party = "your_project_lib"
+# Use sections to control the import order
+sections = "FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
 
 [tool.black]
 line-length = 100
+# Set the target versions if you are working with specific Python versions
+# target-version = ['py37', 'py38', 'py39', 'py310']
+# Uncomment the following to use black's experimental string normalization
+# skip-string-normalization = true
+
+# Add comments to explain the rationale behind the settings
+# This configuration is set to ensure compatibility between isort and black.
+# The line length is set to 100 to improve readability.
